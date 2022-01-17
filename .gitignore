@@ -1,1 +1,6 @@
+# Rust
 target
+
+# Zig
+zig-cache
+zig-out
