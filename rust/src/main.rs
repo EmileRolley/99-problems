@@ -10,8 +10,12 @@ fn last<T: Copy>(v: Vec<T>) -> Option<T> {
 }
 
 #[test]
-fn test_last() {
+fn last_on_empty_list() {
     assert_eq!(None, last(Vec::<i8>::new()));
+}
+
+#[test]
+fn last_on_simple_vectors() {
     assert_eq!(Some(2), last(vec![0, 1, 2]));
     assert_eq!(Some("2"), last(vec!["0", "1", "2"]));
 }
